@@ -71,14 +71,15 @@ public abstract class Produto {
 				categoria = "Vestuário Esportivo";
 				break;
 				
-			case 3:
+			/*case 3:
 				categoria = "Suplemento Esportivo ";
-				break;
+				break;*/
 		}
 		
 		System.out.println("\n\n***********************************************************");
 		System.out.println("Dados do Produto:");
 		System.out.println("***********************************************************");
+		System.out.println("Código: " + this.codigo);
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Preço: " + this.preco);
 		System.out.println("Categoria: " + categoria);
