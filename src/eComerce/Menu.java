@@ -1,12 +1,32 @@
 package eComerce;
 
 import java.util.Scanner;
+import produto.model.Produto;
+import produto.model.EquipamentoEsportivo;
+import produto.model.VestuarioEsportivo;
 
 public class Menu {
 
 	public static void main(String[] args) {
 		// E-commerce Produtos Esportivos
 
+		
+		//Teste Produto
+		/*Produto prod1 = new Produto(1, "Bola de Pilates", 56.99f, 1, "Acte");
+		prod1.visualizar();
+		Produto prod2 = new Produto(2, "Anel de Pilates", 69.90f, 1, "Acte");
+		prod2.visualizar();
+		Produto prod3 = new Produto(3, "Short de corrida", 2999f, 2, "Nike");
+		prod3.visualizar();
+		Produto prod4 = new Produto(4, "Whey Protein",165.53f, 3, "Integralmédica");
+		prod4.visualizar();*/
+		
+		//Teste EquipamentoEsportivo 
+		EquipamentoEsportivo eqEsport = new EquipamentoEsportivo(1, "Bola de Pilates", 56.99f, 1, "Acte", "300 KG", "PVC","Rosa");
+		eqEsport.visualizar();
+		//Teste VestuárioEsportivo 
+		VestuarioEsportivo vestEsport = new VestuarioEsportivo(3, "Short de corrida", 2999f, 2, "Nike", "G", "Poliéster", "Corrida");
+		vestEsport.visualizar();
 		Scanner leia = new Scanner(System.in);
 
 		int opcao;
